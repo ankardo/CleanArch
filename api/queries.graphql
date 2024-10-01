@@ -1,0 +1,23 @@
+mutation newOrder{
+   createOrder(input:{id:"200", Price:200.0, Tax:10.0}){
+    id
+    Price
+    Tax
+  }
+}
+query findOrder {
+    find(id: "1") {
+        id
+        Price
+        Tax
+        FinalPrice
+    }
+}
+query findAllOrders {
+    findAll {
+        id
+        Price
+        Tax
+        FinalPrice
+    }
+}
