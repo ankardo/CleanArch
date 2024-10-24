@@ -13,6 +13,6 @@ FROM scratch
 WORKDIR /app
 COPY --from=builder /build/main /app/main
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
-COPY ./cmd/ordersystem/.env ./
+COPY .env ./
 EXPOSE 8000 50051 8080
 CMD ["/app/main"]

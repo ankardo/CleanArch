@@ -45,5 +45,5 @@ services:
     build: .
     image: cleanarch-app
     ports: [8000:8000, 50051:50051, 8080:8080]
-    env_file: [./cmd/ordersystem/.env]
+    env_file: [./.env]
     command: [./main]
