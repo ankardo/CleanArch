@@ -5,25 +5,18 @@
 - Docker
 - Go
 
-## Comando Necessários para Executar o Sistema
+## Comandos Necessários para Executar o Sistema
 
-1. Subir os containers do docker:
+### Execução Inicial
+
+```bash
+docker compose up --build -d
+```
+
+### Execuções Futuras
 
 ```bash
 docker compose up -d
-
-```
-
-1. Rodar o Makefile:
-
-```bash
-make migrate
-```
-
-1. No diretório cmd/ordersystem rodar o arquivo go  dos servidores com wire:
-
-```bash
-go run main.go wire_gen.go
 ```
 
 ## Portas Utilizadas

@@ -1,5 +1,5 @@
 mutation newOrder{
-   createOrder(input:{id:"200", Price:200.0, Tax:10.0}){
+   createOrder(input:{id:"1", Price:200.0, Tax:10.0}){
     id
     Price
     Tax
